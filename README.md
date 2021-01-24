@@ -81,11 +81,11 @@ sudo apt-get install cassandra
 6. Stop cassandra: `nodetool drain` and let it finish, than run `systemctl stop cassandra`
 
 7. Configure cassandra.yaml (configuration file): `sudo nano /etc/cassandra/cassandra.yaml`
-Change in the nano editor
-   rpc_address -> 0.0.0.0
-   broadcast_rpc_address: 1.2.3.4 -> uncomment this line
-   data_file_directories -> /StudentData/cassandra/data
-   commitlog_directory -> /StudentData/cassandra/commitlog
+- Change in the nano editor
+  * rpc_address -> 0.0.0.0
+  * broadcast_rpc_address: 1.2.3.4 -> uncomment this line
+  * data_file_directories -> /StudentData/cassandra/data
+  * commitlog_directory -> /StudentData/cassandra/commitlog
 
 	* later on if you encouter querying request timeout  you should add few  zeroes (2-6) to every number like in:
    - https://stackoverflow.com/a/54800860/13727260
