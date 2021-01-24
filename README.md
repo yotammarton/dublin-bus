@@ -22,7 +22,7 @@ In this project we help the Dublin bus control center and citizines of the city 
 
 
 [![](https://i.imgur.com/oSbMGHu.png)](https://i.imgur.com/oSbMGHu.png)
-<br>
+
 
 ### Prerequisites
                
@@ -59,8 +59,9 @@ sudo apt-get remove cassandra
 sudo apt-get autoremove cassandra
 sudo rm -rf /var/lib/cassandra
 sudo rm -rf /var/log/cassandra
-sudo rm -rf /etc/cassandra```
-	 (Delete everything it finds):  `sudo find / -name 'cassandra'`
+sudo rm -rf /etc/cassandra
+```
+- Delete everything it finds:  `sudo find / -name 'cassandra'`
 
 2. Fresh installation of Cassandra
 ```bash
@@ -68,7 +69,8 @@ sudo rm -rf /etc/apt/sources.list.d/cassandra.sources.list
 echo "deb https://downloads.apache.org/cassandra/debian 311x main" | sudo tee -a /etc/apt/sources.list.d/cassandra.sources.list
 curl https://downloads.apache.org/cassandra/KEYS | sudo apt-key add -
 sudo apt-get update
-sudo apt-get install cassandra```
+sudo apt-get install cassandra
+```
 
 3. Verify you see cassandra.yaml `ls /etc/cassandra/ `
 
