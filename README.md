@@ -24,7 +24,7 @@ In this project we help the Dublin bus control center and citizines of the city 
 [![](https://i.imgur.com/oSbMGHu.png)](https://i.imgur.com/oSbMGHu.png)
 <br>
 
-###Prerequisites
+### Prerequisites
                
 1. Databricks machine with Databricks Runtime Version 6.4 (includes Apache Spark 2.4.5, Scala 2.11)
     * Python 3.7 or higher
@@ -38,7 +38,7 @@ In this project we help the Dublin bus control center and citizines of the city 
 	* This is only optional(!) we dont use the warehouse in this part (but we do in other parts of our project)
 	* See instructions below
 
-###notebook.ipnyb
+### notebook.ipnyb
 *  Contains the cells to run to reproduce the code
 * Kafka stream with dublin-bus data is needed
 * Air Quality data is needed but we will not supply
