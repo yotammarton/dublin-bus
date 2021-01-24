@@ -9,10 +9,12 @@ In this project we help the Dublin bus control center and citizines of the city 
 - Indicating about picks in air pollution (data by [BreezoMeter.com](http://BreezoMeter.com "BreezoMeter.com"))
 
 - Recommendations for city closure - when the air pollution is extremely high, we want to reduce the emissions and advice to prevent the entrance of private cars to the city center. 
+<br>
 [![](https://i.imgur.com/7KBRL38.png)](https://i.imgur.com/7KBRL38.png)
 
 
 - Real time transit alternatives - car drivers are provided with an alternative transportation option with buses to the city center, based on real-time bus locations (Kafka stream)
+<br>
 [![](https://i.imgur.com/oSbMGHu.png)](https://i.imgur.com/oSbMGHu.png)
 <br>
 
@@ -46,20 +48,21 @@ In this code we:
 ###Cassandra cluster setup
 - We will setup Cassandra 3.11.9 on our machine, configure the cluster and open communication with other machine on the same network
 1. If reinstalling first do:
-		sudo apt-get remove cassandra
-		sudo apt-get autoremove cassandra
-		sudo rm -rf /var/lib/cassandra
-		sudo rm -rf /var/log/cassandra
-		sudo rm -rf /etc/cassandra
-	 (Delete everything it finds):
-		sudo find / -name 'cassandra'
+```bash
+sudo apt-get remove cassandra
+sudo apt-get autoremove cassandra
+sudo rm -rf /var/lib/cassandra
+sudo rm -rf /var/log/cassandra
+sudo rm -rf /etc/cassandra```
+	 (Delete everything it finds):  `sudo find / -name 'cassandra'`
 
 2. Fresh installation of Cassandra
-		sudo rm -rf /etc/apt/sources.list.d/cassandra.sources.list
-		echo "deb https://downloads.apache.org/cassandra/debian 311x main" | sudo tee -a /etc/apt/sources.list.d/cassandra.sources.list
-		curl https://downloads.apache.org/cassandra/KEYS | sudo apt-key add -
-		sudo apt-get update
-		sudo apt-get install cassandra
+```bash
+sudo rm -rf /etc/apt/sources.list.d/cassandra.sources.list
+echo "deb https://downloads.apache.org/cassandra/debian 311x main" | sudo tee -a /etc/apt/sources.list.d/cassandra.sources.list
+curl https://downloads.apache.org/cassandra/KEYS | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install cassandra```
 
 3. Verify you see cassandra.yaml `ls /etc/cassandra/ `
 
@@ -77,13 +80,16 @@ Change in the nano editor
    commitlog_directory -> /StudentData/cassandra/commitlog
 
 	* later on if you encouter querying request timeout  you should add few  zeroes (2-6) to every number like in:
-   https://stackoverflow.com/a/54800860/13727260
-   https://stackoverflow.com/questions/37114455/reading-error-in-cassandra
+   - https://stackoverflow.com/a/54800860/13727260
+   - https://stackoverflow.com/questions/37114455/reading-error-in-cassandra
 
 8. Create new data dir in the right disk partition, move existing cassandra folders to the partition
-		mkdir /StudentData/cassandra
-		sudo mv /var/lib/cassandra/data /StudentData/cassandra
-		sudo mv /var/lib/cassandra/commitlog /StudentData/cassandra
+```bash
+mkdir /StudentData/cassandra
+sudo mv /var/lib/cassandra/data /StudentData/cassandra
+sudo mv /var/lib/cassandra/commitlog /StudentData/cassandra
+```
+
 
 9. Finally, Start cassandra: `systemctl start cassandra` than `journalctl -f -u cassandra` and exit.
 
