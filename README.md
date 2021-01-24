@@ -51,7 +51,7 @@ In this code we:
 - Impute missing data in air quality index values by windowed mean imputation
 - Create and updated live map for the dashboard, deploy it to git to update the bus control center dashboard.
 
-###Cassandra cluster setup
+### Cassandra cluster setup
 - We will setup Cassandra 3.11.9 on our machine, configure the cluster and open communication with other machine on the same network
 1. If reinstalling first do:
 ```bash
@@ -102,6 +102,7 @@ sudo mv /var/lib/cassandra/commitlog /StudentData/cassandra
 9. Finally, Start cassandra: `systemctl start cassandra` than `journalctl -f -u cassandra` and exit.
 
 Thats it!
-`
+<br>
 [Yotam Martin](https://www.linkedin.com/in/yotam-martin-b41493170/ "Yotam Martin")
+<br>
 [Gal Goldstein](https://www.linkedin.com/in/gal-goldstein-8776b0168/ "Gal Goldstein")
