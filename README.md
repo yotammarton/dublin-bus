@@ -9,12 +9,18 @@ In this project we help the Dublin bus control center and citizines of the city 
 - Indicating about picks in air pollution (data by [BreezoMeter.com](http://BreezoMeter.com "BreezoMeter.com"))
 
 - Recommendations for city closure - when the air pollution is extremely high, we want to reduce the emissions and advice to prevent the entrance of private cars to the city center. 
-_
+
+------------
+
+
 [![](https://i.imgur.com/7KBRL38.png)](https://i.imgur.com/7KBRL38.png)
 
 
 - Real time transit alternatives - car drivers are provided with an alternative transportation option with buses to the city center, based on real-time bus locations (Kafka stream)
-_
+
+------------
+
+
 [![](https://i.imgur.com/oSbMGHu.png)](https://i.imgur.com/oSbMGHu.png)
 <br>
 
