@@ -110,5 +110,5 @@ Thats it!
 
 _____
 
-[](https://www.linkedin.com/in/yotam-martin-b41493170/ "Yotam Martin"), 
-[](https://www.linkedin.com/in/gal-goldstein-8776b0168/ "Gal Goldstein")
+[Yotam Martin](https://www.linkedin.com/in/yotam-martin-b41493170/ "Yotam Martin"), 
+[Gal Goldstein](https://www.linkedin.com/in/gal-goldstein-8776b0168/ "Gal Goldstein")
