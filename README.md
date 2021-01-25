@@ -109,7 +109,6 @@ Thats it!
  [A Review of Missing Data Treatment Methods](https://spu.fem.uniag.sk/cvicenia/ksov/prokeinova/MBA-Business%20Modelling/Lecture%201/Missing%20values/missing%20values.pdf "A Review of Missing Data Treatment Methods"). Liu Peng, Lei Lei.
 
 _____
-<br>
-[Yotam Martin](https://www.linkedin.com/in/yotam-martin-b41493170/ "Yotam Martin")
-<br>
-[Gal Goldstein](https://www.linkedin.com/in/gal-goldstein-8776b0168/ "Gal Goldstein")
+
+[](https://www.linkedin.com/in/yotam-martin-b41493170/ "Yotam Martin"), 
+[](https://www.linkedin.com/in/gal-goldstein-8776b0168/ "Gal Goldstein")
