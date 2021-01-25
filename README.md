@@ -35,8 +35,8 @@ In this project we help the Dublin bus control center and citizines of the city 
 
 2.  Another machine that will be our warehouse, together with Apache Cassandra cluster
 
-	* This is only optional(!) we dont use the warehouse in this part (but we do in other parts of our project)
-	* See instructions below
+	* This warehouse is used to log extreme air quality events
+	* See instructions below for setup
 
 ### notebook.ipnyb
 *  Contains the cells to run to reproduce the code
@@ -50,6 +50,7 @@ In this code we:
 - Read the Kafka data stream for dublin-bus data
 - Impute missing data in air quality index values by windowed mean imputation
 - Create and updated live map for the dashboard, deploy it to git to update the bus control center dashboard.
+- Upload data to warehouse regarding times of high air pollution events
 
 ### Cassandra cluster setup
 - We will setup Cassandra 3.11.9 on our machine, configure the cluster and open communication with other machine on the same network
