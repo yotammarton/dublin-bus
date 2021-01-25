@@ -45,7 +45,7 @@ In this project we help the Dublin bus control center and citizines of the city 
 
 In this code we:
 - Show the closure location that will be recommended upon high air pollution event.
-- Calculate bus rides alternatives between every two bus stops in Dublin
+- Calculate bus rides alternatives between every two bus stops in Dublin, based on kafka stram bus locations
 - Process air quality data
 - Read the Kafka data stream for dublin-bus data
 - Impute missing data in air quality index values by windowed mean imputation
