@@ -48,7 +48,7 @@ In this code we:
 - Calculate bus rides alternatives between every two bus stops in Dublin, based on kafka stram bus locations
 - Process air quality data
 - Read the Kafka data stream for dublin-bus data
-- Impute missing data in air quality index values by windowed mean imputation
+- Impute missing data in air quality index values by windowed mean imputation [[1]](#1)
 - Create and updated live map for the dashboard, deploy it to git to update the bus control center dashboard.
 - Upload data to warehouse regarding times of high air pollution events
 
@@ -103,6 +103,11 @@ sudo mv /var/lib/cassandra/commitlog /StudentData/cassandra
 9. Finally, Start cassandra: `systemctl start cassandra` than `journalctl -f -u cassandra` and exit.
 
 Thats it!
+
+### References
+<a id="1">[1]</a>
+ [A Review of Missing Data Treatment Methods](https://spu.fem.uniag.sk/cvicenia/ksov/prokeinova/MBA-Business%20Modelling/Lecture%201/Missing%20values/missing%20values.pdf "A Review of Missing Data Treatment Methods"). Liu Peng, Lei Lei.
+
 <br>
 [Yotam Martin](https://www.linkedin.com/in/yotam-martin-b41493170/ "Yotam Martin")
 <br>
