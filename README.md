@@ -3,9 +3,10 @@
 
 # 1st place - students final projects
 
-Presentation - Youtube (click)
+Presentation - Youtube (click)</br>
 [![Presentation - Youtube](https://img.youtube.com/vi/-PGyBLPF-IM/0.jpg)](https://www.youtube.com/watch?v=-PGyBLPF-IM)
 
+----------
 
 ![](https://i.imgur.com/fSJlKGa.png)
 
