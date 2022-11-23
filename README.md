@@ -3,7 +3,7 @@
 
 # 1st place - students final projects
 
-[](https://youtu.be/-PGyBLPF-IM "Presentation - Youtube")
+Presentation - Youtube (click)
 [![Presentation - Youtube](https://img.youtube.com/vi/-PGyBLPF-IM/0.jpg)](https://www.youtube.com/watch?v=-PGyBLPF-IM)
 
 
